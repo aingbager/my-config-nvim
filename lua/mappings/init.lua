@@ -6,10 +6,11 @@ opt.shiftwidth = 4
 opt.smartindent = true
 opt.tabstop = 4
 opt.softtabstop = 4
+opt.cursorline = false -- block line
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.numberwidth = 4
 opt.ruler = false
 
 -- copy paste
