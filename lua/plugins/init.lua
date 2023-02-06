@@ -1,4 +1,4 @@
-vim.cmd [[packadd packer.nvim]]
+--vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     --packer manager
@@ -15,4 +15,13 @@ return require('packer').startup(function(use)
     -- bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*",
     requires = 'nvim-tree/nvim-web-devicons'}
+
+    --treesitter(highlight)
+    use {'nvim-treesitter/nvim-treesitter',run= ':TSUpdate'}
+
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
 end)

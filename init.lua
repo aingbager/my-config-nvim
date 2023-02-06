@@ -1,3 +1,5 @@
 require 'mappings'
 require 'plugins'
 require 'color-scheme'
+require 'treesitter'
+require 'lsp'
